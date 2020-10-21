@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="TestNGSample" time-out="1200000">
+    <!--전체 수행-->
+    <test name="sampleTest">
+        <groups>
+            <run>
+                <exclude name="sampleTest"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.tmon.test.sample.*" />
+        </packages>
+    </test>
+    <!--전체 수행-->
+</suite>
